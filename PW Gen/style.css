@@ -1,0 +1,57 @@
+body {
+    background-color: #1F2937;
+    font-family: sans-serif;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+h1 {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.white {
+    color: white;
+}
+
+.green {
+    color: #10B981; 
+}
+
+#gen-pw {
+    background-color: #10B981;
+    color: white;
+    margin-left: 0;
+}
+#gen-pw:hover {
+    background-color: #4fcda3;
+}
+
+.pw {
+    background-color: #273549;
+    color:#10B981;
+    width: 40vw;
+    
+
+}
+
+.pw:hover {
+    background-color: #37475e;
+}
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+#isCopiedMessage {
+    font-size: 1rem;
+}
