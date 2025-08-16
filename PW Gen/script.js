@@ -4,7 +4,9 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let password1El = document.getElementById("pw1");
 let password2El = document.getElementById("pw2");
 let isCopiedMessageEl = document.getElementById("isCopiedMessage");
+let isGenerated = false;
 function generatePassword() {
+    isGenerated = true;
     let password1 = "";
     let password2 = "";
     for (let i = 0; i < 15; i++) {
@@ -17,6 +19,9 @@ function generatePassword() {
 }
 
 function copyText1() {
+    if (isGenerated === false) {
+        return;
+    }
     let copyText = password1El.textContent;
 
     navigator.clipboard.writeText(copyText)
@@ -25,6 +30,9 @@ function copyText1() {
 }
 
 function copyText2() {
+    if (isGenerated === false) {
+        return;
+    }
     let copyText = password2El.textContent;
 
     navigator.clipboard.writeText(copyText)
